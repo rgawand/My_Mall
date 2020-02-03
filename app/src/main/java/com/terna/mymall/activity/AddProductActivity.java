@@ -39,7 +39,7 @@ import retrofit2.Response;
 import static com.terna.mymall.helper.URLS.BASE_URL;
 
 public class AddProductActivity extends AppCompatActivity {
-
+//test
     private CTextView mCTextView4;
     private AppCompatImageView mImage1;
     private AppCompatImageView mImage2;
