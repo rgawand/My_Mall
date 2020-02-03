@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "387774302206",
+    "firebase_url": "https://my-mall-3fc23.firebaseio.com",
+    "project_id": "my-mall-3fc23",
+    "storage_bucket": "my-mall-3fc23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387774302206:android:d8c9c68527239fedeba2af",
+        "android_client_info": {
+          "package_name": "com.terna.mymall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387774302206-r3qa90q4rg7pv8nfsk3p11lm2q761miv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.terna.mymall",
+            "certificate_hash": "2eae59ccf85dc6cec9c31b190f53c9fb8d20a25e"
+          }
+        },
+        {
+          "client_id": "387774302206-ros6kfgorhku3vhtr2kqo1mkqfopfadl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3TCm50G2g_jaHiOiYReCiiDzF3P21Dx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387774302206-ros6kfgorhku3vhtr2kqo1mkqfopfadl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

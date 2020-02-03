@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <com.terna.mymall.helper.ui.CEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:id="@+id/sr_date"
+        android:layout_marginTop="5dp"
+        />
+
+    <com.terna.mymall.helper.ui.CEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Time"
+        android:id="@+id/sr_time"
+        android:layout_marginTop="5dp"
+        />
+
+    <com.terna.mymall.helper.ui.CButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/style_button"
+        android:layout_marginTop="10dp"
+        android:text="Set Reminder"/>
+</LinearLayout>

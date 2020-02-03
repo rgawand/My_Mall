@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddProductActivity">
+
+    <com.terna.mymall.helper.ui.CTextView
+        android:id="@+id/CTextView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Add Product Image"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_photo"
+        app:layout_constraintBottom_toTopOf="@+id/image_4"
+        app:layout_constraintEnd_toStartOf="@+id/image_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CTextView4" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_photo"
+        app:layout_constraintBottom_toTopOf="@+id/image_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_1"
+        app:layout_constraintTop_toBottomOf="@+id/CTextView4" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_4"
+        app:layout_constraintTop_toBottomOf="@+id/image_2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_photo"
+        app:layout_constraintEnd_toStartOf="@+id/image_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/product_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_1" />
+
+    <com.terna.mymall.helper.ui.CEditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Product Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/product_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_4" />
+
+    <com.terna.mymall.helper.ui.CEditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Product Price"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/product_short_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_name" />
+
+    <com.terna.mymall.helper.ui.CEditText
+        android:id="@+id/product_short_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Product Short Description"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:maxLength="75"
+        app:layout_constraintBottom_toTopOf="@+id/offer_percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_price" />
+
+    <com.terna.mymall.helper.ui.CEditText
+        android:id="@+id/offer_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Offer in percentage"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/offer_get_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_short_description" />
+
+    <com.terna.mymall.helper.ui.CEditText
+        android:id="@+id/offer_get_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Offer if buy on get more"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/product_full_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offer_percent" />
+
+    <com.terna.mymall.helper.ui.CEditText
+        android:id="@+id/product_full_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Product Full Description"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLength="200"
+        app:layout_constraintBottom_toTopOf="@+id/CButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offer_get_more" />
+
+    <com.terna.mymall.helper.ui.CButton
+        android:id="@+id/CButton"
+        style="@style/style_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Add Product"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_full_description" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
